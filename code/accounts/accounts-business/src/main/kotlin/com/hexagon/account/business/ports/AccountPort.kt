@@ -4,5 +4,5 @@ import com.hexagon.accounts.domain.entities.Account
 
 interface AccountPort {
     fun findByUniqueIdentifier(uniqueIdentifier: String): Account
-    fun create(account: Account): Account
+    fun save(account: Account): Account
 }

@@ -6,6 +6,7 @@ import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
 import jakarta.persistence.JoinColumn
 import jakarta.persistence.ManyToOne
+import java.time.LocalDateTime
 import java.util.UUID
 
 @Entity(name = "Account")
@@ -18,7 +19,8 @@ class AccountDataHolder(
     @JoinColumn(name = "person_id", nullable = false)
     var person: PersonDataHolder? = null,
     var currency: String? = null,
-    var status: String? = null
+    var status: String? = null,
+    var lastModifiedStatusDate: LocalDateTime? = null
 )
 
 @Entity(name = "Person")

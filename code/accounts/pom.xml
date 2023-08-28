@@ -34,6 +34,12 @@
                 <module>accounts-api-rest</module>
             </modules>
         </profile>
+        <profile>
+            <id>event-api</id>
+            <modules>
+                <module>account-event-api</module>
+            </modules>
+        </profile>
     </profiles>
 
     <build>

@@ -2,6 +2,7 @@ package com.hexagon.accounts.domain.entities
 
 import java.math.BigDecimal
 import java.time.LocalDate
+import java.time.LocalDateTime
 import java.time.Period
 import java.time.format.DateTimeFormatter
 import kotlin.random.Random
@@ -11,7 +12,8 @@ data class Account(
     val uniqueIdentifier: UniqueIdentifier,
     val person: Person,
     val currency: String,
-    val status: AccountStatus
+    val status: AccountStatus,
+    val lastModifiedStatusDate: LocalDateTime
 ) {
 
     companion object {
@@ -20,7 +22,8 @@ data class Account(
                 uniqueIdentifier = UniqueIdentifier.generate(),
                 person = person,
                 currency = currency,
-                status = AccountStatus.OPEN
+                status = AccountStatus.OPEN,
+                lastModifiedStatusDate = LocalDateTime.now()
             )
         }
     }

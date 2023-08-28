@@ -5,9 +5,11 @@ import com.hexagon.account.business.ports.PersonPort
 import com.hexagon.account.business.usecases.CreateAccountUseCaseImpl
 import com.hexagon.account.business.usecases.CreatePersonUseCaseImpl
 import com.hexagon.account.business.usecases.GetAccountByUniqueIdentifierUseCaseImpl
+import com.hexagon.account.business.usecases.UpdateAccountStatusUseCaseImpl
 import com.hexagon.accounts.domain.usecases.CreateAccountUseCase
 import com.hexagon.accounts.domain.usecases.CreatePersonUseCase
 import com.hexagon.accounts.domain.usecases.GetAccountByUniqueIdentifierUseCase
+import com.hexagon.accounts.domain.usecases.UpdateAccountStatusUseCase
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
@@ -26,5 +28,10 @@ class UseCaseConfig {
     @Bean
     fun createAccountUseCase(personPort: PersonPort, accountPort: AccountPort): CreateAccountUseCase {
         return CreateAccountUseCaseImpl(personPort, accountPort)
+    }
+
+    @Bean
+    fun updateAccountStatusUseCase(accountPort: AccountPort): UpdateAccountStatusUseCase {
+        return UpdateAccountStatusUseCaseImpl(accountPort)
     }
 }

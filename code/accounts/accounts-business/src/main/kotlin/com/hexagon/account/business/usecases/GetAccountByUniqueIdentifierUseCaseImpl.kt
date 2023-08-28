@@ -1,7 +1,7 @@
 package com.hexagon.account.business.usecases
 
 import com.hexagon.account.business.ports.AccountPort
-import com.hexagon.accounts.domain.AccountBlockedException
+import com.hexagon.accounts.domain.exceptions.AccountBlockedException
 import com.hexagon.accounts.domain.entities.Account
 import com.hexagon.accounts.domain.entities.AccountStatus
 import com.hexagon.accounts.domain.usecases.GetAccountByUniqueIdentifierUseCase

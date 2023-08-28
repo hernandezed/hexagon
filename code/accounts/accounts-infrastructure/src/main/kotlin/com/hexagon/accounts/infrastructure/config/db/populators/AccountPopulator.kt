@@ -4,6 +4,7 @@ import com.hexagon.accounts.domain.entities.Account
 import com.hexagon.accounts.infrastructure.db.holders.AccountDataHolder
 import com.hexagon.accounts.infrastructure.db.repositories.AccountRepository
 import org.springframework.stereotype.Component
+import java.time.LocalDateTime
 import java.util.*
 import java.util.concurrent.ThreadLocalRandom
 import kotlin.collections.ArrayList
@@ -28,7 +29,8 @@ class AccountPopulator(
                         .joinToString(""),
                     person = it,
                     currency = "USD",
-                    status = "OPEN"
+                    status = "OPEN",
+                    lastModifiedStatusDate = LocalDateTime.now()
                 )
             )
             if (it.nationality != "US") {
@@ -39,7 +41,8 @@ class AccountPopulator(
                             .joinToString(""),
                         person = it,
                         currency = Currency.getInstance(Locale.of("en", it.nationality)).currencyCode,
-                        status = "OPEN"
+                        status = "OPEN",
+                        lastModifiedStatusDate = LocalDateTime.now()
                     )
                 )
             }
