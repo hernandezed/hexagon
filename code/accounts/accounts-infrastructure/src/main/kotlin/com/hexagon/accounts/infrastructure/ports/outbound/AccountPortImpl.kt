@@ -1,6 +1,6 @@
 package com.hexagon.accounts.infrastructure.ports.outbound
 
-import com.hexagon.account.business.ports.AccountPort
+import com.hexagon.accounts.business.ports.AccountPort
 import com.hexagon.accounts.domain.entities.Account
 import com.hexagon.accounts.domain.entities.AccountStatus
 import com.hexagon.accounts.domain.entities.Person
@@ -10,7 +10,6 @@ import com.hexagon.accounts.infrastructure.db.holders.AccountDataHolder
 import com.hexagon.accounts.infrastructure.db.holders.PersonDataHolder
 import com.hexagon.accounts.infrastructure.db.repositories.AccountRepository
 import org.springframework.stereotype.Component
-import java.time.LocalDateTime
 import java.util.UUID
 
 @Component

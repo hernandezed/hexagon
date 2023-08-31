@@ -1,11 +1,11 @@
 package com.hexagon.accounts.infrastructure.config
 
-import com.hexagon.account.business.ports.AccountPort
-import com.hexagon.account.business.ports.PersonPort
-import com.hexagon.account.business.usecases.CreateAccountUseCaseImpl
-import com.hexagon.account.business.usecases.CreatePersonUseCaseImpl
-import com.hexagon.account.business.usecases.GetAccountByUniqueIdentifierUseCaseImpl
-import com.hexagon.account.business.usecases.UpdateAccountStatusUseCaseImpl
+import com.hexagon.accounts.business.ports.AccountPort
+import com.hexagon.accounts.business.ports.PersonPort
+import com.hexagon.accounts.business.usecases.CreateAccountUseCaseImpl
+import com.hexagon.accounts.business.usecases.CreatePersonUseCaseImpl
+import com.hexagon.accounts.business.usecases.GetAccountByUniqueIdentifierUseCaseImpl
+import com.hexagon.accounts.business.usecases.UpdateAccountStatusUseCaseImpl
 import com.hexagon.accounts.domain.usecases.CreateAccountUseCase
 import com.hexagon.accounts.domain.usecases.CreatePersonUseCase
 import com.hexagon.accounts.domain.usecases.GetAccountByUniqueIdentifierUseCase

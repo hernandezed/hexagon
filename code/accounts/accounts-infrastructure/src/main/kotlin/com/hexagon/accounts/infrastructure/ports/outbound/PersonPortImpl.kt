@@ -1,6 +1,6 @@
 package com.hexagon.accounts.infrastructure.ports.outbound
 
-import com.hexagon.account.business.ports.PersonPort
+import com.hexagon.accounts.business.ports.PersonPort
 import com.hexagon.accounts.domain.entities.Person
 import com.hexagon.accounts.infrastructure.db.holders.PersonDataHolder
 import com.hexagon.accounts.infrastructure.db.repositories.PersonRepository

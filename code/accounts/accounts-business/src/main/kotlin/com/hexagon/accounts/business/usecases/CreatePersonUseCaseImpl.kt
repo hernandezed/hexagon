@@ -1,6 +1,6 @@
-package com.hexagon.account.business.usecases
+package com.hexagon.accounts.business.usecases
 
-import com.hexagon.account.business.ports.PersonPort
+import com.hexagon.accounts.business.ports.PersonPort
 import com.hexagon.accounts.domain.entities.Person
 import com.hexagon.accounts.domain.exceptions.NotSuitablePersonException
 import com.hexagon.accounts.domain.usecases.CreatePersonUseCase

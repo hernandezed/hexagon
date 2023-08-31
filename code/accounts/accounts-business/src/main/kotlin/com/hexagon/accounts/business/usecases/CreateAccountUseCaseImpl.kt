@@ -1,7 +1,7 @@
-package com.hexagon.account.business.usecases
+package com.hexagon.accounts.business.usecases
 
-import com.hexagon.account.business.ports.AccountPort
-import com.hexagon.account.business.ports.PersonPort
+import com.hexagon.accounts.business.ports.AccountPort
+import com.hexagon.accounts.business.ports.PersonPort
 import com.hexagon.accounts.domain.entities.Account
 import com.hexagon.accounts.domain.usecases.CreateAccountUseCase
 

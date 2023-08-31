@@ -12,8 +12,6 @@
         <module>accounts-domain</module>
         <module>accounts-business</module>
         <module>accounts-infrastructure</module>
-        <module>accounts-api-rest-contract</module>
-        <module>accounts-api-rest</module>
     </modules>
 
     <groupId>com.hexagon</groupId>
@@ -32,12 +30,7 @@
             <id>api-rest</id>
             <modules>
                 <module>accounts-api-rest</module>
-            </modules>
-        </profile>
-        <profile>
-            <id>event-api</id>
-            <modules>
-                <module>account-event-api</module>
+                <module>accounts-api-rest-contract</module>
             </modules>
         </profile>
     </profiles>

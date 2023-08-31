@@ -1,4 +1,4 @@
-package com.hexagon.account.business.ports
+package com.hexagon.accounts.business.ports
 
 import com.hexagon.accounts.domain.entities.Account
 
