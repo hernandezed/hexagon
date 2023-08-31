@@ -9,7 +9,6 @@
     <packaging>pom</packaging>
     <description>hexagon</description>
     <properties>
-        <java.version>1.8</java.version>
         <kotlin.version>1.8.22</kotlin.version>
     </properties>
     <modules>

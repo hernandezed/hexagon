@@ -12,6 +12,7 @@
         <module>accounts-domain</module>
         <module>accounts-business</module>
         <module>accounts-infrastructure</module>
+        <module>azure-function-examples</module>
     </modules>
 
     <groupId>com.hexagon</groupId>
@@ -31,6 +32,13 @@
             <modules>
                 <module>accounts-api-rest</module>
                 <module>accounts-api-rest-contract</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>azure</id>
+            <modules>
+                <module>accounts-azure</module>
+                <module>accounts-event-api-contract</module>
             </modules>
         </profile>
     </profiles>
