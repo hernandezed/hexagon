@@ -32,13 +32,13 @@ class UpdateAccountStatusInvoker(
             name = "req",
             subscriptionName = "",
             topicName = ""
-        ) request: HttpRequestMessage<Optional<String>>,
+        ) message: String,
         context: ExecutionContext
     ) {
         val typeRef: JavaType =
             objectMapper.constructType(object : TypeReference<Event<UpdateStatusAccountContent>>() {})
 
-        val event: Event<UpdateStatusAccountContent> = objectMapper.readValue(request.body.get(), typeRef)
+        val event: Event<UpdateStatusAccountContent> = objectMapper.readValue(message, typeRef)
 
         this.port.invoke(event.content.uniqueReference, event)
     }
